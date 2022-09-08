@@ -1,0 +1,64 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+/** Add styles here **/
+
+.elc-product {
+    margin: 0 5%;
+    margin-top: 21px;
+
+    &__breadcrumb {
+        @include text-style(15px, 400, 20px, $color-gray);
+    }
+}
+
+.elc-product-desc {
+    &__title {
+        @include text-style(20px, 700, 24px, $color-black);
+    }
+    &__subtitle {
+        @include text-style(15px, 400, 20px, $color-black);
+        margin-top: 7px;
+    }
+}
+
+.elc-product-images {
+    margin-top: 13px;
+}
+
+.elc-features {
+    margin-top: 23px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__label {
+        @include text-style(15px, 700, 20px, $color-black);
+    }
+    &__desc {
+        @include text-style(15px, 400, 20px, $color-black);
+    }
+}
+
+.elc-shade {
+    border: 2px solid #E6E6E6;
+    margin-top: 31px;
+    display: flex;
+    justify-content: space-between;
+
+    &__name {
+        @include text-style(15px, 700, 20px, $color-black);
+        margin: 21px 0 15px 20px;
+    }
+    &__color {
+        background-color: #F6DFC8;
+        height: 16px;
+        width: 16px;
+        margin: 20px 20px 0 20px;
+    }
+}
+
+.divider {
+    margin-top: 20px;
+}
