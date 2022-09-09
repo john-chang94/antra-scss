@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-export const ProductImage = ({ image }) =>
+export const ProductImage = ({ image }) => (
   <figure>
-    <img src={image} alt="Product" />
+    <img className="elc-main-product__img" src={image} alt="Product" />
   </figure>
-    
+);

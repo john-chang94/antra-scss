@@ -21,7 +21,7 @@ export const Product = ({
 }) => (
   <main className="elc-product">
     <h4 className="elc-product__breadcrumb">{category}</h4>
-    <div>
+    <div className="elc-main-product">
       <ProductImage image={imgURL} />
     </div>
     <div>
@@ -33,9 +33,10 @@ export const Product = ({
         features={features}
         shade={shade}
       />
-      <hr className='divider' />
+      <hr className='product-divider' />
       <ProductPurchase price={price} />
     </div>
+    <hr className='related-products-divider' />
     <div>
       <ProductGrid
         heading={crossSell.heading}
